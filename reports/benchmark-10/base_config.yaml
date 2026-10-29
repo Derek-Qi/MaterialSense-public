@@ -1,0 +1,27 @@
+alpha: 0.1
+cv_folds: 5
+heuristics:
+  total_mass_range:
+  - 2100
+  - 2550
+  water_binder_range:
+  - 0.2
+  - 0.8
+models:
+  gradient_boosting:
+    learning_rate: 0.05
+    max_depth: 3
+    min_samples_leaf: 3
+    n_estimators: 200
+  random_forest:
+    max_features: 1.0
+    min_samples_leaf: 2
+    n_estimators: 200
+ood:
+  neighbors: 5
+  threshold_quantile: 0.95
+seed: 42
+split:
+  calibration: 0.2
+  test: 0.2
+  train: 0.6

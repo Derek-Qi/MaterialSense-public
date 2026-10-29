@@ -1,0 +1,19 @@
+include README.md LICENSE CITATION.cff requirements.txt
+include requirements-ci.txt THIRD_PARTY_NOTICES.md
+include app.py explorer.py explorer_app.py explorer_charts.py dashboard_text.py
+include .streamlit/config.toml .gitattributes .gitignore
+graft configs
+graft assets
+graft scripts
+graft tests
+graft data
+graft docs
+graft reports/benchmark-10
+graft reports/reference
+graft reports/external-exploration
+include reports/failure-cases.md reports/explorer-desktop.png reports/dependency-licenses.csv
+graft .github
+global-exclude __pycache__ *.py[cod]
+prune .venv
+prune artifacts
+prune reports/runs

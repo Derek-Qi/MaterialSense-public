@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "materialsense"
+version = "0.2.0rc1"
+description = "A reproducible benchmark for reliable ML on concrete strength prediction"
+authors = [{name = "Derek Qi"}]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "numpy>=2.1,<3", "pandas>=2.2,<3", "scikit-learn>=1.6,<2",
+  "scipy>=1.14,<2", "matplotlib>=3.9,<4", "streamlit>=1.66,<2", "altair>=6,<7",
+  "PyYAML>=6,<7", "xlrd>=2,<3", "joblib>=1.4,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+
+[project.scripts]
+materialsense = "materialsense.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP"]
+

@@ -1,0 +1,5 @@
+# Frozen before observing repeated-study outcomes. No threshold is selected from test errors.
+seeds: [42, 43, 44, 45, 46, 47, 48, 49, 50, 51]
+ood_quantiles: [0.80, 0.90, 0.95, 0.99]
+high_error_mpa: 10.0
+permutation_repeats: 5

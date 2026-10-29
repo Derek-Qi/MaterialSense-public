@@ -1,0 +1,38 @@
+{
+  "project": "MaterialSense",
+  "prepared_on": "2026-10-27",
+  "assessment": "single-source frozen-model cross-source exploration; not harmonized external validation",
+  "n_sources": 1,
+  "n_recipes": 7,
+  "n_observations": 35,
+  "target": "means of three specimens at each recipe and age, MPa",
+  "n_underpredicted": 35,
+  "mae_mpa": 15.32721268748711,
+  "rmse_mpa": 15.684915308741276,
+  "mean_signed_error_mpa": -15.32721268748711,
+  "residual_covered": 2,
+  "cqr_covered": 11,
+  "residual_whole_recipes_covered": 0,
+  "cqr_whole_recipes_covered": 0,
+  "n_unwarned": 16,
+  "unwarned_mae_mpa": 14.959584023303577,
+  "source_doi": "https://doi.org/10.3390/app9112266",
+  "source_license": "CC BY 4.0",
+  "predictions_sha256": "8cf67f0825f2376a279fbdf107bcb4f05384fb0306f6bdad62a99631905d3997",
+  "historical_project_tests": {
+    "phase": "Phase6",
+    "passed": 86,
+    "status": "historical saved logs, not rerun for this publication"
+  },
+  "method": "Existing frozen seed42 model and its UCI-fitted calibration; Wu labels not used for fitting, selection, tuning or recalibration.",
+  "uncertainties": [
+    "35 aggregate observations are not 35 independent recipes or 105 acquired raw measurements.",
+    "The original plus/minus statistical definition has not been confirmed.",
+    "The 91-day highest-value statement conflicts with the table; primary table values are retained.",
+    "Slag=0 is a structural inference, not a separately printed measurement.",
+    "Sources, specimen geometry and target aggregation are not fully harmonized with UCI.",
+    "Residuals do not identify a single physical cause of the errors."
+  ],
+  "source_predictions_sha256": "5cb3a9ee6dbb437ed0ffa9f211de927624427b43c0ff95ade1b949d7c2cc3252",
+  "publication_transformation": "CRLF line endings normalized to LF; numeric text, column order and records unchanged."
+}

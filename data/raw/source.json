@@ -1,0 +1,13 @@
+{
+  "dataset": "UCI Concrete Compressive Strength (165)",
+  "author": "I-Cheng Yeh",
+  "doi": "10.24432/C5PK67",
+  "license": "CC BY 4.0",
+  "url": "https://archive.ics.uci.edu/static/public/165/concrete+compressive+strength.zip",
+  "source_filename": "concrete-source.zip",
+  "source_sha256": "dad85d14de8aee4e07479daa774e6b569a313715b71a3b92c95a07cf91c2c9a7",
+  "workbook_sha256": "710076c66b9ca3f8050e7942f3dcbdbe04013534daeb0077ffd3079a52d8e0c4",
+  "csv_sha256": "b9a697bd3dd009b52077066c3fac62065120487f1d7f084b9136d8bf0e024823",
+  "rows": 1030,
+  "conversion": "Original float64 values, canonical names, no deduplication or rounding"
+}

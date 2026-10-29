@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite MaterialSense software and separately cite the UCI dataset used in your work."
+title: "MaterialSense: A Reproducible Benchmark for Reliable Machine Learning on Concrete Strength Prediction"
+type: software
+version: 0.2.0rc1
+license: MIT
+authors:
+  - family-names: "Qi"
+    given-names: "Derek"
+abstract: >
+  Repeated exact-recipe grouped evaluation, fixed material-feature ablation,
+  group-maximum conformal intervals and training-only novelty diagnostics on
+  the public UCI concrete-strength dataset. No engineering validation is claimed.
+keywords:
+  - reproducibility
+  - concrete compressive strength
+  - conformal prediction
+  - grouped evaluation
+references:
+  - type: data
+    title: "Concrete Compressive Strength"
+    authors:
+      - family-names: Yeh
+        given-names: I-Cheng
+    doi: 10.24432/C5PK67
+    publisher:
+      name: "UCI Machine Learning Repository"
+    license: CC-BY-4.0

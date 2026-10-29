@@ -1,0 +1,27 @@
+seed: 49
+split:
+  train: 0.6
+  calibration: 0.2
+  test: 0.2
+cv_folds: 5
+alpha: 0.1
+models:
+  random_forest:
+    n_estimators: 200
+    min_samples_leaf: 2
+    max_features: 1.0
+  gradient_boosting:
+    n_estimators: 200
+    learning_rate: 0.05
+    max_depth: 3
+    min_samples_leaf: 3
+ood:
+  neighbors: 5
+  threshold_quantile: 0.95
+heuristics:
+  total_mass_range:
+  - 2100
+  - 2550
+  water_binder_range:
+  - 0.2
+  - 0.8

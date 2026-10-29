@@ -1,0 +1,13 @@
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.cff text eol=lf
+*.csv text eol=lf
+*.ps1 text eol=crlf
+
+# Immutable measured artifacts are hashed as bytes, including original line endings.
+data/raw/** -text
+reports/benchmark-10/** -text
+reports/reference/** -text

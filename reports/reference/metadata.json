@@ -1,0 +1,144 @@
+{
+  "created_utc": "2026-10-22T11:40:18.760000+00:00",
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "streamlit": "1.66.1",
+    "joblib": "1.6.0",
+    "PyYAML": "6.0.3",
+    "xlrd": "2.0.2"
+  },
+  "config": {
+    "seed": 42,
+    "split": {
+      "train": 0.6,
+      "calibration": 0.2,
+      "test": 0.2
+    },
+    "cv_folds": 5,
+    "alpha": 0.1,
+    "models": {
+      "random_forest": {
+        "n_estimators": 200,
+        "min_samples_leaf": 2,
+        "max_features": 1.0
+      },
+      "gradient_boosting": {
+        "n_estimators": 200,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_leaf": 3
+      }
+    },
+    "ood": {
+      "neighbors": 5,
+      "threshold_quantile": 0.95
+    },
+    "heuristics": {
+      "total_mass_range": [
+        2100,
+        2550
+      ],
+      "water_binder_range": [
+        0.2,
+        0.8
+      ]
+    }
+  },
+  "source_code_sha256": "582643742f8076468a469fc0001902748abd029172d2350977c76de824d4315c",
+  "data_sha256_float64": "8b9a7af0366e0f437ad04cfba6bb729ec0c3ea76fa780ff3d3f4d057356b6af6",
+  "config_sha256": "9482261462aac592493a76f25320cc1315ac53345a33063d91e7e8c6f976d01e",
+  "data_audit": {
+    "rows": 1030,
+    "recipes": 428,
+    "full_duplicate_rows_after_first": 25,
+    "grouping": "Exact first-seven float64; signed zero normalized; no rounding"
+  },
+  "split_audit": {
+    "rows": {
+      "train": 572,
+      "calibration": 226,
+      "test": 232
+    },
+    "groups": {
+      "train": 256,
+      "calibration": 86,
+      "test": 86
+    },
+    "pairwise_overlap": {
+      "train_calibration": 0,
+      "train_test": 0,
+      "calibration_test": 0
+    },
+    "overlap_groups": 0
+  },
+  "random_split_audit": {
+    "rows": {
+      "train": 618,
+      "calibration": 206,
+      "test": 206
+    },
+    "groups": {
+      "train": 325,
+      "calibration": 147,
+      "test": 160
+    },
+    "pairwise_overlap": {
+      "train_calibration": 98,
+      "train_test": 104,
+      "calibration_test": 58
+    },
+    "overlap_groups": 260
+  },
+  "selected": {
+    "model": "random_forest",
+    "features": "engineered",
+    "cv_group_rmse": 5.929755197830963
+  },
+  "nominal_coverage": 0.9,
+  "intervals": {
+    "group_max_residual": {
+      "row_coverage": 0.9482758620689655,
+      "whole_recipe_coverage": 0.8953488372093024,
+      "covered_rows": 220,
+      "n_rows": 232,
+      "covered_recipes": 77,
+      "n_recipes": 86,
+      "mean_width_mpa": 21.218843607546592,
+      "median_width_mpa": 21.21884360754659,
+      "finite": true
+    },
+    "group_max_cqr": {
+      "row_coverage": 0.9741379310344828,
+      "whole_recipe_coverage": 0.9418604651162791,
+      "covered_rows": 226,
+      "n_rows": 232,
+      "covered_recipes": 81,
+      "n_recipes": 86,
+      "mean_width_mpa": 29.815381862860423,
+      "median_width_mpa": 28.12674799626969,
+      "finite": true
+    }
+  },
+  "calibration": {
+    "n_groups": 86,
+    "aggregation": "maximum per recipe",
+    "residual_correction_mpa": 10.609421803773294,
+    "cqr_correction_mpa": 5.500059782979122
+  },
+  "ood": {
+    "threshold": 1.3357786972107877,
+    "test_flagged_rows": 37,
+    "training_only": true,
+    "self_neighbor_excluded": true
+  },
+  "age_sensitivity": {
+    "adjacent_comparisons": 210,
+    "decreasing_predictions": 3
+  }
+}
