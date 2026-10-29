@@ -2,6 +2,10 @@
 
 MaterialSense is a research and educational Python project that predicts concrete compressive strength from ingredient quantities and curing age. It provides reproducible experiments, uncertainty intervals, novelty warnings and an interactive Streamlit interface. It is **not** a validated tool for engineering design.
 
+[![CI](https://github.com/Derek-Qi/MaterialSense-public/actions/workflows/ci.yml/badge.svg)](https://github.com/Derek-Qi/MaterialSense-public/actions/workflows/ci.yml)
+
+**中文简介：** MaterialSense 是一个使用 AI 辅助开发的混凝土抗压强度预测研究与教学项目，包含按配方分组的评估、预测区间和交互界面。跨来源实验属于探索性评估，不能作为工程设计依据。[查看中文项目介绍](https://derekqi.com/zh/projects/materialsense/)。
+
 ## Research design and evidence
 
 The underlying [UCI Concrete Compressive Strength dataset](https://doi.org/10.24432/C5PK67) contains 1,030 observations. Ingredients are measured in kg/m³, curing age in days and strength in MPa. Software is distributed under [MIT](LICENSE); the dataset is separately available under CC BY 4.0. See [data attribution](data/README.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
